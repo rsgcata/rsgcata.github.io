@@ -31,7 +31,7 @@
     }
     
     .container-fluid>.row {
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
     .footerItemTitle {

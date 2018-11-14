@@ -24,14 +24,12 @@
                     </button>
                     <div class="collapse navbar-collapse text-nowrap" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item headerItem active" v-on:click="makeNavItemActive">
-                                <a>About me</a>
+                            <li class="nav-item headerItem" v-bind:class="{active: $route.path === '/'}">
+                                <router-link to="/">About me</router-link>
                             </li>
-                            <!--
-                            <li class="nav-item headerItem" v-on:click="makeNavItemActive">
-                                <a>Blog</a>
+                            <li class="nav-item headerItem" v-bind:class="{active: $route.path.indexOf('blog') != -1}">
+                                <router-link to="/blog/articles">Blog</router-link>
                             </li>
-                            -->
                         </ul>
                     </div>
                 </nav>
@@ -74,11 +72,6 @@
                 }
                 
                 $('#header').addClass('shadowed');
-            },
-            makeNavItemActive: function(event) {
-                var elem = event.currentTarget;
-                $('.headerItem.active').removeClass('active');
-                $(elem).addClass('active');
             },
             showMeSomeLove : function(event) {
                 if(Cookies.get('didShowSomeLove') === '1' || this.showSomeLoveClicked === true) {
@@ -263,10 +256,12 @@
         font-weight: 500;
         line-height: 23px;
         outline-color: rgb(34, 34, 34);
+        color: black;
         text-transform: uppercase;
         transition-timing-function: ease;
         cursor: pointer;
         transition: 0.5s;
+        text-decoration: none;
     }
     
     .headerItem a:hover, .headerItem.active a {

@@ -100,7 +100,7 @@
                     <div class="col-12">
                         <h3>People and resources to learn from</h3>
                         <p class="aboutMeText">
-                            If you are like me and enjoy reading about and following development and implementation patterns that could make a system more robust and properly organised and structured, then I recommend following some of the references below.
+                            If you are like me and enjoy reading about development and following implementation patterns that could make a system more robust and properly organised and structured, then I recommend following some of the references below.
                         </p>
                         <p class="aboutMeText">
                             <a href="https://martinfowler.com/" referrerpolicy="no-referrer" rel="noreferrer" target="_blank">Martin Fowler's web page</a>
@@ -156,6 +156,10 @@
         letter-spacing: 2px;
         font-size: 14px;
         margin: 0;
+    }
+    
+    .storyPresentation {
+        margin-top: 3%;
     }
     
     p {
