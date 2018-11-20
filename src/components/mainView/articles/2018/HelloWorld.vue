@@ -27,7 +27,7 @@
                     If you decided to follow this blog and read the articles I post here, let me tell you what you may read about here. 
                 </p>
                 <p>
-                    Some things I may post things about : <br/>
+                    Some things I may post about : <br/>
                 </p>
                 <ul>
                     <li>
@@ -43,11 +43,11 @@
                         Security: general types of attacks on the web apps, server security, private network security, microservices security, SSL
                     </li>
                     <li>
-                        Other general things related to the IT industry. Things like freelancing, job positings and opinions on their set of requirements, full stack developer term, startups, unicorns
+                        Other general things related to the IT industry. Things like freelancing, job postings and opinions on their set of requirements, full stack developer term, startups, unicorns
                     </li>
                 </ul>
                 <p>
-                    There will be no set date when I will post articles. I may write 5 articles in a week, or one in a few months. I need to feel that I can share something interesting with you, or feel that I really need to say my opinion about something before I start writing about it. Also time is another factor that will contribute to the new posts frequency. But if I really feel that something really needs to get out there, I will find time to write about it.
+                    There will be no set date when I will post articles. I may write 5 articles in a week, or one in a few months. I need to feel that I can share something interesting with you, or feel that I really need to say my opinion about something before I start writing about it. Also time is another factor that will contribute to the new posts frequency. But if I really feel that something really needs to get out there, I will find the time to write about it.
                 </p>
                 <p>
                     The articles will be organised based on their date when they were posted, for now. Maybe, in the future I will add a "sort by tags" feature so you can reach the desired type of article faster. You can navigate through articles by using the "archive" panel situated on the right side of the page (articles are grouped by year).

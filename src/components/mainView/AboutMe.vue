@@ -47,7 +47,7 @@
                     <div class="col-12">
                         <h3>TOOLS AND TECH</h3>
                         <p class="aboutMeText">
-                            Being a curious person and having the feel that I can build something with my own hands/brain, motivated me to learn many things over the years. Since 2010, I have walked many paths. I have worked on projects as a freelancer, I have worked for a local company, I have worked for my own projects/dreams. Working on my own projects was the thing that initiated me in back end development (a social network for which I had to learn proper design patterns and adapting a framework, Codeigniter, to my needs). But the most things I learned was when I participated in the development of a complex platform as lead developer. I was given there the opportunity to learn many things. It was challenging because I had to take all the decisions regarding the development. I had to master proper design patterns, I had to create a framework (DDD/CQRS type of framework because it felt like it was simpler to build one than to force things to work with an existing/public framework), had to learn about domain driven design, command and query segregation, big data, microservices, high availability solutions for the tools I chose to work with, system distribution, types of testing. Had to learn about message queues and test Kafka and ActiveMQ (in the end the publishing and consumption was done at framework level), service discovery (Consul), AWS (VPC, EC2, networking and security, storage, IAM), Elastic Search for log contralization, big data , business intelligence and analytics tolls (just research to determine the requirements of the features) and many other things. Because all the things I ever learned about programming, development, I learned them alone, it was not hard for me to adapt for this challenge. I was grateful that I was given the opportunity to participate and learn so many new things.
+                            Being a curious person and having the feel that I can build something with my own hands/brain, motivated me to learn many things over the years. Since 2010, I have walked many paths. I have worked on projects as a freelancer, I have worked for a local company, I have worked for my own projects/dreams. Working on my own projects was the thing that initiated me in back end development (a social network for which I had to learn proper design patterns and adapting a framework, Codeigniter, to my needs). But the most things I learned was when I participated in the development of a complex platform as lead developer. I was given there the opportunity to learn many things. It was challenging because I had to take all the decisions regarding the development. I had to master proper design patterns, create a framework (DDD/CQRS type of framework because it felt like it was simpler to build one than to force things to work with an existing/open source framework), learn about domain driven design, command and query segregation, big data, microservices, high availability solutions for the tools I chose to work with, system distribution, types of testing. I had to learn about message queues and test Kafka and ActiveMQ (in the end the publishing and consumption was done at framework level), service discovery (Consul), AWS (VPC, EC2, networking and security, storage, IAM), Elastic Search for log centralization, big data , business intelligence and analytics tolls (just research to determine the requirements of the features) and many other things. I also gathered deeper knowledge about online marketing as the platform offered online marketing related services like website traffic, users, sales tracking and analytics, lead nurturing, lead recovery, return on ads investment analytics. Because all the things I  learned about programming, development, I learned them alone, it was not hard for me to adapt for this challenge. I was grateful that I was given the opportunity to participate and learn so many new things.
                         </p>
                         <p class="aboutMeText">
                             I like state of the art technologies which are flexible, clean, simple to use and well documented. I think that PHP7 fits the description (although, maybe it's too flexible and offers too many ways of doing the same thing, too many frameworks that solve the same problems). From the tools I've worked with, open source ones, I think <a href="https://www.consul.io/"  referrerpolicy="no-referrer" rel="noreferrer" target="_blank">Consul</a> sits right at the top. Nothing to complain about it. It does what they say it should do, it's easy to use and get used to, it has nice docs, has a nice REST API, it's using json for configuration (which it should be used everywhere, I prefer it a lot more than xml or yaml).
@@ -56,7 +56,7 @@
                             Below are some of the tools and technologies I have worked with.
                         </p>
                         <p class="aboutMeText">
-                            From all these technologies, I like more and I focused more on those that serve for back end development. I focused more on this because I feel that the back end is mission critical and it requires much more attention than front end development.
+                            From all these technologies, I like more and I focused more on those that serve for back end development. I focused more on this because I feel that the back end is mission critical and it requires much more attention than front end development (UI/UX is also important, but if the product brings value by other means, not through UI design & cosmetics, the back end should be the focus. Example: Google).
                         </p>
                             
                         <p class="aboutMeText">
@@ -75,12 +75,13 @@
                             <span class="tagItem">HTML</span> 
                             <span class="tagItem">CSS</span> 
                             <span class="tagItem">JQuery</span>
-                            <span class="tagItem">Vuejs</span> 
+                            <span class="tagItem">Vuejs2</span> 
                             <span class="tagItem">Bootstrap</span> 
                             <span class="tagItem">Apache</span> 
                             <span class="tagItem">Nginx</span> 
                             <span class="tagItem">Consul</span> 
-                            <span class="tagItem">Elastic Search</span> 
+                            <span class="tagItem">Elastic Search</span>
+                            <span class="tagItem">Kibana</span> 
                             <span class="tagItem">Micro Services</span>
                             <span class="tagItem">DDD</span> 
                             <span class="tagItem">AWS</span> 
@@ -149,7 +150,7 @@
     }
     
     .shortPresentation:first-child h1:first-child {
-            margin-top: 15%;
+        margin-top: 15%;
     }
     
     .shortPresentation h1 {

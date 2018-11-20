@@ -33,7 +33,8 @@
                                         <button class="btn btn-primary" type="submit"
                                                 v-on:click="handleCommentCommand">
                                             Submit comment
-                                        </button>
+                                        </button><br/><br/>
+                                        <div class="g-recaptcha" id="commentRecaptchaContainer"></div> 
                                     </form>
                                 </div>
                             </div><br/>
@@ -145,7 +146,8 @@
                         articlePath: null
                     }
                 },
-                comments: []
+                comments: [],
+                recaptcha: null
             };
         },
         watch: {
@@ -167,6 +169,16 @@
         },
         created: function() {
             this.generateComments();
+        },
+        mounted: function() {
+            this.recaptcha = {
+                commentRecaptchaId: window.grecaptcha.render('commentRecaptchaContainer', {
+                    sitekey: '6LdB9noUAAAAAIb_39zia4LhlrQNqxgoQHJyHfoJ',
+                    callback: this.handleCommentWithRecaptcha,
+                    size: 'invisible',
+                    badge: 'inline'
+                })
+            };
         },
         methods: {
             generateComments: function() {
@@ -195,9 +207,7 @@
                             .addClass('fa-chevron-up');
                 }
             },
-            handleCommentCommand: function(event) {
-                event.preventDefault();
-                
+            handleCommentWithRecaptcha: function(recaptchaToken) {
                 if(this.commentForm.pendingHandling) {
                     return;
                 }
@@ -225,13 +235,14 @@
                 $.ajax('https://script.google.com/macros/s/AKfycbyHlw4J2PGMfNcsWu5vZxDxKiUTNqb353wSVX8IDltGLGHZ4yoV/exec', {
                     method: 'GET',
                     data: {
-                        data: JSON.stringify(this.commentForm.command)
+                        data: JSON.stringify(this.commentForm.command),
+                        recaptchaToken: recaptchaToken
                     },
                     dataType: 'jsonp',
                     jsonp: "callback"
                 }).then(responseData => {
                     if(responseData.success == null || responseData.success != true) {
-                        this.commentForm.formNotice = 'There was an issue while trying to submit your comment. Please try again after a few seconds. If the problem persists, contact me.'
+                        this.commentForm.formNotice = 'There was an issue while trying to submit your comment. Please refresh the page and try again after a few seconds. If the problem persists, contact me.'
                         $('.formFeedback').removeClass('text-danger').removeClass('text-success')
                                 .addClass('text-danger');
                     }
@@ -247,12 +258,17 @@
                     this.commentForm.pendingHandling = false;
                 },
                 () => {
-                    this.commentForm.formNotice = 'There was an issue while trying to submit your comment. Please try again after a few seconds. If the problem persists, contact me.'
+                    this.commentForm.formNotice = 'There was an issue while trying to submit your comment. Please refresh the page and try again after a few seconds. If the problem persists, contact me.'
                     $('.formFeedback').removeClass('text-danger').removeClass('text-success')
                                 .addClass('text-danger');
                     
                     this.commentForm.pendingHandling = false;
                 });
+            },
+            handleCommentCommand: function(event) {
+                event.preventDefault();
+                
+                window.grecaptcha.execute(this.recaptcha.commentRecaptchaId);
             }
         },
         filters: {
