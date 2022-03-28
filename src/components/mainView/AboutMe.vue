@@ -115,6 +115,9 @@
                         <p class="aboutMeText">
                             <a href="http://udidahan.com/articles/" referrerpolicy="no-referrer" rel="noreferrer" target="_blank">Udi Dahan's articles</a>
                         </p>
+                        <p>
+                            <a href="https://www.youtube.com/channel/UCCfqyGl3nq_V0bo64CjZh8g" referrerpolicy="no-referrer" rel="noreferrer" target="_blank">Dave Farley's CI/CD vlog</a>
+                        </p>
                         <p class="aboutMeText">
                             <a href="http://www.cqrs.nu/" referrerpolicy="no-referrer" rel="noreferrer" target="_blank">Simple presentation of DDD and CQRS concepts</a>
                         </p>
