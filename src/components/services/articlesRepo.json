@@ -1,1 +1,26 @@
-[{"componentPath":"2018/GithubPagesCommentsUsingGoogleSheets","fullUrlPath":"/blog/articles/2018/GithubPagesCommentsUsingGoogleSheets","blogRelativePath":"2018/GithubPagesCommentsUsingGoogleSheets","year":2018,"publishingDateNumber":20181111,"title":"Github Pages Comments Using Google Sheets"},{"componentPath":"2018/HelloWorld","fullUrlPath":"/blog/articles/2018/HelloWorld","blogRelativePath":"2018/HelloWorld","year":2018,"publishingDateNumber":20181108,"title":"Hello World"},{"componentPath":"2018/MysqlHighAvailabilityAndGroupReplication","fullUrlPath":"/blog/articles/2018/MysqlHighAvailabilityAndGroupReplication","blogRelativePath":"2018/MysqlHighAvailabilityAndGroupReplication","year":2018,"publishingDateNumber":20181113,"title":"Mysql High Availability And Group Replication"}]
+[
+    {
+        "componentPath": "2018/GithubPagesCommentsUsingGoogleSheets",
+        "fullUrlPath": "/blog/articles/2018/GithubPagesCommentsUsingGoogleSheets",
+        "blogRelativePath": "2018/GithubPagesCommentsUsingGoogleSheets",
+        "year": 2018,
+        "publishingDateNumber": 20181111,
+        "title": "Github Pages Comments Using Google Sheets"
+    },
+    {
+        "componentPath": "2018/HelloWorld",
+        "fullUrlPath": "/blog/articles/2018/HelloWorld",
+        "blogRelativePath": "2018/HelloWorld",
+        "year": 2018,
+        "publishingDateNumber": 20181108,
+        "title": "Hello World"
+    },
+    {
+        "componentPath": "2018/MysqlHighAvailabilityAndGroupReplication",
+        "fullUrlPath": "/blog/articles/2018/MysqlHighAvailabilityAndGroupReplication",
+        "blogRelativePath": "2018/MysqlHighAvailabilityAndGroupReplication",
+        "year": 2018,
+        "publishingDateNumber": 20181113,
+        "title": "Mysql High Availability And Group Replication"
+    }
+]

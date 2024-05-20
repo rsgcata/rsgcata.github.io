@@ -1,0 +1,25 @@
+name: rsgcata-profile
+
+services:
+
+  profile-dev-vue3:
+    build:
+      context: ./
+      dockerfile: .docker/Dockerfile
+      target: app-dev-vue3
+      args:
+        - APP_BASE_DIR=/var/www/vue3
+    container_name: rsgcata-profile-dev-vue3
+    volumes:
+      - type: bind
+        source: ./vue3
+        target: /var/www/vue3
+      - vue3_dev_node_modules:/var/www/vue3/node_modules
+    ports:
+      - "5173:5173"
+      - "4173:4173"
+    restart: unless-stopped
+    tty: true
+
+volumes:
+  vue3_dev_node_modules:
